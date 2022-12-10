@@ -1,0 +1,42 @@
+:root {
+    --default-transition-time: 0.3s;
+    --white: #fff;
+    --black: #0B0D17;
+    --light-grey: #D0D6F9;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1 rem = 10px;*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-content: start;
+}
+
