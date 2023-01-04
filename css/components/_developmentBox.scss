@@ -3,7 +3,7 @@
  */
 
 .dev-box {
-    min-height: 58rem;
+    min-height: 50rem;
     box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2);
     .dev-box__img {
         height: 20rem;
@@ -12,7 +12,7 @@
     }
 
     .dev-box__text {
-        padding: 4rem 2rem 4rem 2rem;
+        padding: 3rem 2rem 3rem 2rem;
 
         .dev-box__title {
             margin-bottom: 2.2rem;
@@ -21,6 +21,10 @@
         .dev-box__features, .dev-box__resources {
             display: flex;
             flex-direction: column;
+            row-gap: 1.2rem;
+        }
+
+        .dev-box__resources {
             row-gap: 2rem;
         }
 
@@ -28,14 +32,30 @@
             list-style-type: initial;
             margin-bottom: 4rem;
         }
-        
+
         a {
             border-bottom-width: 2px;
             border-bottom-style: solid;
         }
-        
+
         a:hover {
             border-bottom-width: 0px;
         }
     }
+
+    @media screen and (min-width: $minWidthTabletPortrait) {
+        min-height: 58rem;
+        .dev-box__text {
+            padding: 4rem 2rem 4rem 2rem;
+
+            .dev-box__title {
+                margin-bottom: 3.2rem;
+            }
+
+            .dev-box__features {
+                row-gap: 2rem;
+            }
+        }
+    }
+
 }

@@ -1,5 +1,5 @@
 .frontend-section {
-    --dev-box-width: 30rem;
+    --dev-box-width: 32rem;
     .dev-boxes-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, var(--dev-box-width));
