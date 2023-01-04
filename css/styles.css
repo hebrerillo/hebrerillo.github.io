@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1; }
 
 ul {
@@ -76,6 +76,7 @@ img {
  */
 .dev-box {
   width: 40rem;
+  min-height: 58rem;
   box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2); }
   .dev-box .dev-box__img {
     height: 20rem;
@@ -85,11 +86,18 @@ img {
     padding: 4rem 2rem 4rem 2rem; }
     .dev-box .dev-box__text .dev-box__title {
       margin-bottom: 2.2rem; }
-    .dev-box .dev-box__text .dev-box__features {
+    .dev-box .dev-box__text .dev-box__features, .dev-box .dev-box__text .dev-box__resources {
       display: flex;
       flex-direction: column;
-      row-gap: 1.2rem;
-      list-style-type: initial; }
+      row-gap: 2rem; }
+    .dev-box .dev-box__text .dev-box__features {
+      list-style-type: initial;
+      margin-bottom: 4rem; }
+    .dev-box .dev-box__text a {
+      border-bottom-width: 2px;
+      border-bottom-style: solid; }
+    .dev-box .dev-box__text a:hover {
+      border-bottom-width: 0px; }
 
 .main-header {
   display: flex;
