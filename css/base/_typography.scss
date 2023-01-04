@@ -21,8 +21,21 @@
 
 .default-paragraph {
     line-height: 1.4;
-    max-width: 70rem;
-    font-size: 1.8rem;
+    max-width: 85rem;
+}
+
+.default-paragraph--centered {
+    margin: 0 auto;
+}
+
+.default-paragraph--text-centered {
+    text-align: center;
+}
+
+@media screen and (min-width: $minWidthSmallDesktop) {
+    .default-paragraph {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (min-width: $minWidthDesktop) {

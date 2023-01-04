@@ -11,7 +11,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  /*1 rem = 10px;*/ }
+  /*1 rem = 10px;*/
+  background-color: #fafafa; }
 
 *, *:before, *:after {
   box-sizing: inherit;
@@ -29,7 +30,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+a:hover {
+  border-bottom-width: 0px; }
 
 img, picture {
   display: block; }
@@ -48,6 +54,12 @@ img {
 .section {
   padding-top: 6rem;
   padding-bottom: 4rem; }
+
+.highlighted-component {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: .5rem;
+  padding: 1rem; }
 
 @media screen and (min-width: 48em) {
   body {
@@ -86,9 +98,17 @@ img {
 
 .default-paragraph {
   line-height: 1.4;
-  max-width: 70rem;
-  font-size: 1.8rem; }
+  max-width: 85rem; }
 
+.default-paragraph--centered {
+  margin: 0 auto; }
+
+.default-paragraph--text-centered {
+  text-align: center; }
+
+@media screen and (min-width: 64em) {
+  .default-paragraph {
+    font-size: 1.8rem; } }
 @media screen and (min-width: 90em) {
   .section-title {
     margin-bottom: 7rem; } }
@@ -99,7 +119,8 @@ img {
   display: grid;
   grid-template-rows: 20rem 1fr;
   min-height: 50rem;
-  box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2); }
+  background-color: #fff;
+  box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.1); }
   .dev-box .dev-box__img {
     background-size: cover;
     background-repeat: no-repeat; }
@@ -118,11 +139,6 @@ img {
       align-self: end; }
     .dev-box .dev-box__text .dev-box__features {
       list-style-type: initial; }
-    .dev-box .dev-box__text a {
-      border-bottom-width: 2px;
-      border-bottom-style: solid; }
-    .dev-box .dev-box__text a:hover {
-      border-bottom-width: 0px; }
   @media screen and (min-width: 48em) {
     .dev-box {
       display: grid;
@@ -164,13 +180,18 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--dev-box-width));
     justify-content: center;
-    gap: 4rem; }
+    gap: 4rem;
+    margin: 5rem 0; }
     .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
       background-image: url("../img/rest-api.png"); }
     .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
       background-image: url("../img/photosnap.png"); }
     .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
       background-image: url("../img/space-tourism.png"); }
+  .frontend-section .table-layouts {
+    margin: 3rem auto; }
+    .frontend-section .table-layouts td {
+      padding: 0.5rem 0.7rem; }
   @media screen and (min-width: 32em) {
     .frontend-section {
       --dev-box-width: 40rem; } }

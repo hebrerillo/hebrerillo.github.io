@@ -5,6 +5,7 @@
         grid-template-columns: repeat(auto-fill, var(--dev-box-width));
         justify-content: center;
         gap: 4rem;
+        margin: 5rem 0;
 
         .rest-api-dev {
             .dev-box__img {
@@ -22,6 +23,13 @@
             .dev-box__img {
                 background-image: url('../img/space-tourism.png');
             }
+        }
+    }
+    
+    .table-layouts {
+        margin: 3rem auto;
+        td {
+            padding: 0.5rem 0.7rem;
         }
     }
     
