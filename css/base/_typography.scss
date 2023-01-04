@@ -11,6 +11,10 @@
     @include fluid-type(font-size, 375px, 1440px, 20px, 50px);
 }
 
+.heading-3 {
+    @include fluid-type(font-size, 375px, 1440px, 16px, 22px);
+}
+
 .section-title {
     margin-bottom: 4rem;
 }
