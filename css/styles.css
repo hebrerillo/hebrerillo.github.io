@@ -155,7 +155,7 @@ img {
   display: flex;
   padding: 1rem 0 1rem 0; }
   .main-header .me-img {
-    --me-img-clamp-values: clamp(6rem, 14vw, 20rem);
+    --me-img-clamp-values: clamp(4rem, 14vw, 9rem);
     width: var(--me-img-clamp-values);
     height: var(--me-img-clamp-values);
     border-radius: 50%;
