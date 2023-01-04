@@ -21,7 +21,8 @@ body {
   line-height: 1; }
 
 ul {
-  list-style: none; }
+  list-style-type: none;
+  list-style-position: inside; }
 
 a {
   text-decoration: none;
@@ -41,16 +42,54 @@ img {
   max-width: 144rem;
   margin: 0 auto; }
 
-.header-1 {
+.section {
+  padding-top: 6rem;
+  padding-bottom: 4rem; }
+
+@media screen and (min-width: 90em) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 6rem; } }
+.heading-2, .heading-1, .heading-3 {
+  text-transform: uppercase;
+  text-align: center; }
+
+.heading-1 {
   font-size: clamp(2rem, 5.821vw, 8.2rem); }
 
-.header-2 {
-  font-size: 2rem; }
+.heading-2 {
+  font-size: 3.5rem; }
+
+.section-title {
+  margin-bottom: 4rem; }
 
 .default-paragraph {
   line-height: 1.4;
   max-width: 70rem;
   font-size: 1.8rem; }
+
+@media screen and (min-width: 90em) {
+  .section-title {
+    margin-bottom: 7rem; } }
+/**
+ * This is the layout of a box with information about a specific development
+ */
+.dev-box {
+  width: 40rem;
+  box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2); }
+  .dev-box .dev-box__img {
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .dev-box .dev-box__text {
+    padding: 4rem 2rem 4rem 2rem; }
+    .dev-box .dev-box__text .dev-box__title {
+      margin-bottom: 2.2rem; }
+    .dev-box .dev-box__text .dev-box__features {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.2rem;
+      list-style-type: initial; }
 
 .main-header {
   display: flex;
@@ -65,7 +104,6 @@ img {
     display: none; }
 
 .intro-section {
-  padding-top: 2rem;
   display: flex;
   flex-direction: column; }
   .intro-section .header-2 {
@@ -75,5 +113,12 @@ img {
   .intro-section .intro-paragraph {
     margin-bottom: 0.8rem;
     font-size: 2.4rem; }
+
+.frontend-section .dev-boxes-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem; }
+  .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
+    background-image: url("../img/rest-api.png"); }
 
 /*# sourceMappingURL=styles.css.map */

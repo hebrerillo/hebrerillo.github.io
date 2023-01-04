@@ -1,0 +1,13 @@
+.frontend-section {
+    .dev-boxes-container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 4rem;
+
+        .rest-api-dev {
+            .dev-box__img {
+                background-image: url('../img/rest-api.png');
+            }
+        }
+    }
+}

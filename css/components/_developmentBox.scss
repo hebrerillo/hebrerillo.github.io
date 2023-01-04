@@ -1,0 +1,27 @@
+/**
+ * This is the layout of a box with information about a specific development
+ */
+
+.dev-box {
+    width: 40rem;
+    box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2);
+    .dev-box__img {
+        height: 20rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .dev-box__text {
+        padding: 4rem 2rem 4rem 2rem;
+        .dev-box__title {
+            margin-bottom: 2.2rem;
+        }
+        
+        .dev-box__features {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.2rem;
+            list-style-type: initial;
+        }
+    }
+}
