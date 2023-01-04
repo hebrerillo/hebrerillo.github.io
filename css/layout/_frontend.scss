@@ -9,34 +9,56 @@
 
         .rest-api-dev {
             .dev-box__img {
-                background-image: url('../img/rest-api.png');
+                background-image: url('../assets/mobile/rest-api.png');
             }
         }
-        
+
         .photosnap-dev {
             .dev-box__img {
-                background-image: url('../img/photosnap.png');
+                background-image: url('../assets/mobile/photosnap.png');
             }
         }
-        
+
         .space-tourism-dev {
             .dev-box__img {
-                background-image: url('../img/space-tourism.png');
+                background-image: url('../assets/mobile/space-tourism.png');
             }
         }
     }
-    
+
     .table-layouts {
         margin: 3rem auto;
         td {
             padding: 0.5rem 0.7rem;
         }
     }
-    
+
     @media screen and (min-width: $minWidthBigSmartphone) {
         --dev-box-width: 40rem;
     }
-    
+
+    @media screen and (min-width: $minWidthSmallDesktop) {
+        .dev-boxes-container {
+            .rest-api-dev {
+                .dev-box__img {
+                    background-image: url('../assets/desktop/rest-api.png');
+                }
+            }
+
+            .photosnap-dev {
+                .dev-box__img {
+                    background-image: url('../assets/desktop/photosnap.png');
+                }
+            }
+
+            .space-tourism-dev {
+                .dev-box__img {
+                    background-image: url('../assets/desktop/space-tourism.png');
+                }
+            }
+        }
+    }
+
     @media screen and (min-width: $minWidthDesktop) {
         .dev-boxes-container {
             justify-content: space-between;

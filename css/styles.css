@@ -183,11 +183,11 @@ img {
     gap: 4rem;
     margin: 5rem 0; }
     .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
-      background-image: url("../img/rest-api.png"); }
+      background-image: url("../assets/mobile/rest-api.png"); }
     .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
-      background-image: url("../img/photosnap.png"); }
+      background-image: url("../assets/mobile/photosnap.png"); }
     .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
-      background-image: url("../img/space-tourism.png"); }
+      background-image: url("../assets/mobile/space-tourism.png"); }
   .frontend-section .table-layouts {
     margin: 3rem auto; }
     .frontend-section .table-layouts td {
@@ -195,6 +195,13 @@ img {
   @media screen and (min-width: 32em) {
     .frontend-section {
       --dev-box-width: 40rem; } }
+  @media screen and (min-width: 64em) {
+    .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
+      background-image: url("../assets/desktop/rest-api.png"); }
+    .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
+      background-image: url("../assets/desktop/photosnap.png"); }
+    .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
+      background-image: url("../assets/desktop/space-tourism.png"); } }
   @media screen and (min-width: 90em) {
     .frontend-section .dev-boxes-container {
       justify-content: space-between; } }
