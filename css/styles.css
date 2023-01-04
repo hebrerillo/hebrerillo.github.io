@@ -96,14 +96,17 @@ img {
  * This is the layout of a box with information about a specific development
  */
 .dev-box {
+  display: grid;
+  grid-template-rows: 20rem 1fr;
   min-height: 50rem;
   box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2); }
   .dev-box .dev-box__img {
-    height: 20rem;
     background-size: cover;
     background-repeat: no-repeat; }
   .dev-box .dev-box__text {
-    padding: 3rem 2rem 3rem 2rem; }
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    padding: 3rem 2rem 2rem 2rem; }
     .dev-box .dev-box__text .dev-box__title {
       margin-bottom: 2.2rem; }
     .dev-box .dev-box__text .dev-box__features, .dev-box .dev-box__text .dev-box__resources {
@@ -111,10 +114,10 @@ img {
       flex-direction: column;
       row-gap: 1.2rem; }
     .dev-box .dev-box__text .dev-box__resources {
-      row-gap: 2rem; }
+      row-gap: 2rem;
+      align-self: end; }
     .dev-box .dev-box__text .dev-box__features {
-      list-style-type: initial;
-      margin-bottom: 4rem; }
+      list-style-type: initial; }
     .dev-box .dev-box__text a {
       border-bottom-width: 2px;
       border-bottom-style: solid; }
@@ -122,9 +125,11 @@ img {
       border-bottom-width: 0px; }
   @media screen and (min-width: 48em) {
     .dev-box {
-      min-height: 58rem; }
+      display: grid;
+      grid-template-rows: 25rem 1fr;
+      min-height: 64rem; }
       .dev-box .dev-box__text {
-        padding: 4rem 2rem 4rem 2rem; }
+        padding: 4rem 2rem 2.5rem 2rem; }
         .dev-box .dev-box__text .dev-box__title {
           margin-bottom: 3.2rem; }
         .dev-box .dev-box__text .dev-box__features {
