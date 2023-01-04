@@ -1,3 +1,6 @@
+/**
+ Credit https://www.sassmeister.com/gist/7f22e44ace49b5124eec
+*/
 :root {
   --default-transition-time: 0.3s;
   --white: #fff;
@@ -58,7 +61,13 @@ img {
   font-size: clamp(2rem, 5.821vw, 8.2rem); }
 
 .heading-2 {
-  font-size: 3.5rem; }
+  font-size: 20px; }
+  @media (min-width: 375px) {
+    .heading-2 {
+      font-size: calc(20px + 30 * (100vw - 375px) / 1065); } }
+  @media (min-width: 1440px) {
+    .heading-2 {
+      font-size: 50px; } }
 
 .section-title {
   margin-bottom: 4rem; }
