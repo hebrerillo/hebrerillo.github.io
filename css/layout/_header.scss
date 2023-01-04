@@ -1,0 +1,15 @@
+.main-header {
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    .me-img {
+        --me-img-clamp-values : clamp(6rem, 14vw, 20rem);
+        width: var(--me-img-clamp-values);
+        height: var(--me-img-clamp-values);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    .header-nav {
+        display: none;
+    }
+}

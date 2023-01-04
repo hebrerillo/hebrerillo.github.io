@@ -1,8 +1,9 @@
 :root {
   --default-transition-time: 0.3s;
   --white: #fff;
-  --black: #0B0D17;
-  --light-grey: #D0D6F9; }
+  --black: #000;
+  --light-grey: #D0D6F9;
+  --main-horizontal-padding: 1.5rem; }
 
 html {
   box-sizing: border-box;
@@ -23,15 +24,56 @@ ul {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
+
+img, picture {
+  display: block; }
+
+img {
+  width: 100%; }
 
 .main-container {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
-  position: relative;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: auto 1fr;
-  align-content: start; }
+  padding-left: var(--main-horizontal-padding);
+  padding-right: var(--main-horizontal-padding);
+  max-width: 144rem;
+  margin: 0 auto; }
+
+.header-1 {
+  font-size: clamp(2rem, 5.821vw, 8.2rem); }
+
+.header-2 {
+  font-size: 2rem; }
+
+.default-paragraph {
+  line-height: 1.4;
+  max-width: 70rem;
+  font-size: 1.8rem; }
+
+.main-header {
+  display: flex;
+  padding: 1rem 0 1rem 0; }
+  .main-header .me-img {
+    --me-img-clamp-values: clamp(6rem, 14vw, 20rem);
+    width: var(--me-img-clamp-values);
+    height: var(--me-img-clamp-values);
+    border-radius: 50%;
+    overflow: hidden; }
+  .main-header .header-nav {
+    display: none; }
+
+.intro-section {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column; }
+  .intro-section .header-2 {
+    margin-bottom: 1.3rem; }
+    .intro-section .header-2 .surname {
+      display: none; }
+  .intro-section .intro-paragraph {
+    margin-bottom: 0.8rem;
+    font-size: 2.4rem; }
 
 /*# sourceMappingURL=styles.css.map */
