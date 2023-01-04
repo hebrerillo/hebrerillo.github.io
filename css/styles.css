@@ -75,7 +75,6 @@ img {
  * This is the layout of a box with information about a specific development
  */
 .dev-box {
-  width: 40rem;
   min-height: 58rem;
   box-shadow: 0 0 0.6rem 0.2rem rgba(0, 0, 0, 0.2); }
   .dev-box .dev-box__img {
@@ -122,15 +121,24 @@ img {
     margin-bottom: 0.8rem;
     font-size: 2.4rem; }
 
-.frontend-section .dev-boxes-container {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 4rem; }
-  .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
-    background-image: url("../img/rest-api.png"); }
-  .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
-    background-image: url("../img/photosnap.png"); }
-  .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
-    background-image: url("../img/space-tourism.png"); }
+.frontend-section {
+  --dev-box-width: 30rem; }
+  .frontend-section .dev-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--dev-box-width));
+    justify-content: center;
+    gap: 4rem; }
+    .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
+      background-image: url("../img/rest-api.png"); }
+    .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
+      background-image: url("../img/photosnap.png"); }
+    .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
+      background-image: url("../img/space-tourism.png"); }
+  @media screen and (min-width: 32em) {
+    .frontend-section {
+      --dev-box-width: 40rem; } }
+  @media screen and (min-width: 90em) {
+    .frontend-section .dev-boxes-container {
+      justify-content: space-between; } }
 
 /*# sourceMappingURL=styles.css.map */
