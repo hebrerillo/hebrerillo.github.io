@@ -128,5 +128,9 @@ img {
   column-gap: 4rem; }
   .frontend-section .dev-boxes-container .rest-api-dev .dev-box__img {
     background-image: url("../img/rest-api.png"); }
+  .frontend-section .dev-boxes-container .photosnap-dev .dev-box__img {
+    background-image: url("../img/photosnap.png"); }
+  .frontend-section .dev-boxes-container .space-tourism-dev .dev-box__img {
+    background-image: url("../img/space-tourism.png"); }
 
 /*# sourceMappingURL=styles.css.map */
