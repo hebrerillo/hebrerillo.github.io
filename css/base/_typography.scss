@@ -1,4 +1,4 @@
-.heading-2, .heading-1, .heading-3 {
+.heading-2, .heading-1, .heading-3, .heading-4 {
     text-transform: uppercase;
     text-align: center;
 }
@@ -13,6 +13,10 @@
 
 .heading-3 {
     @include fluid-type(font-size, 375px, 1440px, 16px, 22px);
+}
+
+.heading-4 {
+    @include fluid-type(font-size, 375px, 1440px, 16px, 20px);
 }
 
 .section-title {

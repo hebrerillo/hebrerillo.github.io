@@ -1,16 +1,37 @@
 .intro-section {
     display: flex;
     flex-direction: column;
+    padding-top: 8rem;
+    .heading-1 {
+        @include fluid-type(font-size, 375px, 1440px, 16px, 60px);
+        margin-bottom: 2rem;
+        text-transform: none;
+    }
 
-    .header-2 {
+    .heading-1, .heading-4 {
+        text-align: left;
+    }
+
+    .heading-4 {
         margin-bottom: 1.3rem;
+        color: var(--red);
         .surname {
             display: none;
         }
     }
-    
+
     .intro-paragraph {
         margin-bottom: 0.8rem;
-        font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: $minWidthTabletPortrait) {
+        padding-top: 19rem;
+        .heading-1 {
+            margin-bottom: 4rem;
+        }
+
+        .heading-4 {
+            margin-bottom: 2rem;
+        }
     }
 }
